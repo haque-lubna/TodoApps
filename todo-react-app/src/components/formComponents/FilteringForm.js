@@ -1,8 +1,8 @@
 import React from 'react'
-import { Select } from './formComponents/Select'
-import { TextArea } from './formComponents/TextArea'
-import { Input } from './formComponents/Input'
-import { Priority } from './formComponents/Priority'
+import { Select } from './Select'
+import { TextArea } from './TextArea'
+import { Input } from './Input'
+import { Priority } from './Priority'
 
 export const FilteringForm = () => {
   return (
