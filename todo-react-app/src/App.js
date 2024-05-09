@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import { Sidebar } from './components/Sidebar';
+import { FilteringForm } from './components/FilteringForm';
 
 function App() {
   return (
-    <Sidebar/>
+    <div className='container m-5 p-5'>
+      <FilteringForm/>
+    </div>
   );
 }
 
