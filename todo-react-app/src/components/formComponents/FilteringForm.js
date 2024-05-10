@@ -2,7 +2,7 @@ import React from 'react'
 import { Select } from './Select'
 import { TextArea } from './TextArea'
 import { Input } from './Input'
-import { Priority } from './Priority'
+import { Range } from './Range'
 
 export const FilteringForm = () => {
   return (
@@ -29,7 +29,7 @@ export const FilteringForm = () => {
       </div>
       <div className="row mt-3">
         <div className='col-md-4'>
-          <Priority label="Priority" fieldName="priority"/>
+          <Range label="Priority" fieldName="priority"/>
         </div>
         <div className="col-md-4">
           <Input type="date" label="Deadline" fieldName="deadline" />

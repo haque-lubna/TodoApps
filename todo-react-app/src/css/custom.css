@@ -3,3 +3,11 @@ body {
     background-color: #d9f3e685;
     color: #333;
 }
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
