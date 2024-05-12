@@ -14,16 +14,14 @@ const populateTask = (status, category, subcategory, title, description, priorit
   return task
 }
 
-export const TaskList = () => {
+export const TaskList = ({data}) => {
   return (
     <div className='mt-5'>
         <h3>Task List</h3>
-        <div className='d-flex justify-content-start gap-3'>
-            <SingleTask taskData={populateTask("Pending", "Personal", "Myself", "Prayer", "Esha", 98, "12 March, 2024")}/>
-            <SingleTask taskData={populateTask("Completed", "Professional", "Office", "Submenu", "Dashboard", 14, "12 May, 2024")}/>
-            <SingleTask taskData={populateTask("InProgress", "Personal", "Family", "Shopping", "Pant, Belt, Shirt", 79, "19 May, 2024")}/>
-            <SingleTask taskData={populateTask("Canceled", "Professional", "HEMS", "Multiple", "Migration, Refactor, Data backup", 66, "13 February, 2024")}/>
-            <SingleTask taskData={populateTask("Postpond", "Personal", "Family", "Calling", "Boro, Mejo, Choto", 54, "12 April, 2024")}/>
+        <div className='row gap-3'>
+          {data.map((rowData, i) => (
+              <SingleTask key={i} taskData={rowData}/>
+          ))}
         </div>
     </div>
   )

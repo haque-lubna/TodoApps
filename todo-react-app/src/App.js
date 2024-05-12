@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import './App.css';
 import { FilteringForm } from './components/formComponents/FilteringForm';
 import { TaskList } from './components/listComponents/TaskList';
+import {mockData} from './static/api/mockData.js'
 
 function App() {
+  const [taskList, setTaskList] = useState(mockData)
   return (
-    <div className='container m-5 p-5'>
+    <div className='container mt-5'>
       <FilteringForm/>
-      <TaskList/>
+      <TaskList data = {taskList}/>
     </div>
   );
 }

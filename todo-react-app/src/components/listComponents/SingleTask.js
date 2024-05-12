@@ -3,7 +3,7 @@ import { Range } from '../formComponents/Range'
 
 export const SingleTask = ({taskData}) => {
   return (
-    <div class="card">
+    <div class="col-md-3 card">
       <div class="card-header">
         <div className='d-flex justify-content-between'>
           <span class="p-2 rounded bg-warning fw-bold">{taskData.status}</span>
