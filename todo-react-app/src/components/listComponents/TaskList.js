@@ -33,7 +33,7 @@ export const TaskList = ({data}) => {
             </svg>
           </button>
         </div>
-        <div className='row gap-3'>
+        <div className='row gap-4'>
           {data.map((rowData, i) => (
               <SingleTask key={i} taskData={rowData}/>
           ))}
