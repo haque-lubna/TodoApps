@@ -39,7 +39,14 @@ export const FilteringForm = () => {
         <div className="col-md-8">
           <TextArea label="Task Description" fieldName="description" placeholder="Write your Task Description"/>
         </div>
-      
+      </div>
+      <div className='row d-flex justify-content-end gap-3 mt-3'>
+        <div className='col-md-1'>
+          <button className='btn btn-danger'>Reset</button>
+        </div>
+        <div className='col-md-1'>
+          <button className='btn btn-success'>Submit</button>
+        </div>
       </div>
     </div>
   )
