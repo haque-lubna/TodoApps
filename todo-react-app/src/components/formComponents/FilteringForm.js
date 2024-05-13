@@ -28,6 +28,18 @@ export const FilteringForm = () => {
         </div>
       </div>
       <div className="row mt-3">
+        <div className="col-md-4">
+          <Select label= "Task Status" 
+            fieldName="taskSubCategory"
+            options={[
+              {value: "", label: "Select Task Status"},
+              {value: "pending", label: "Pending"},
+              {value: "postponed", label: "Postponed"},
+              {value: "cancelled", label: "Cancelled"},
+              {value: "inProgress", label: "InProgress"},
+              {value: "completed", label: "Completed"},
+            ]} />
+        </div>
         <div className='col-md-4'>
           <Range label="Priority" fieldName="priority"/>
         </div>

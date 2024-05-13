@@ -7,7 +7,7 @@ export const SingleTask = ({taskData}) => {
         <div className='d-flex justify-content-between'>
           {taskData.status === 'Pending' && <span class="p-2 rounded text-white fw-bold bg-warning fw-bold">{taskData.status}</span>}
           {taskData.status === 'Postponed' && <span class="p-2 rounded text-white fw-bold bg-info fw-bold">{taskData.status}</span>}
-          {taskData.status === 'Canceled' && <span class="p-2 rounded text-white fw-bold bg-danger fw-bold">{taskData.status}</span>}
+          {taskData.status === 'Cancelled' && <span class="p-2 rounded text-white fw-bold bg-danger fw-bold">{taskData.status}</span>}
           {taskData.status === 'InProgress' && <span class="p-2 rounded text-white fw-bold bg-primary fw-bold">{taskData.status}</span>}
           {taskData.status === 'Completed' && <span class="p-2 rounded text-white fw-bold bg-success fw-bold">{taskData.status}</span>}
           <div>

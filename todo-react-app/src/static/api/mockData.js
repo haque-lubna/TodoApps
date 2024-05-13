@@ -17,7 +17,7 @@ export const mockData = [
       "description": "Compile and analyze financial data for Q2 report.",
       "priority": 90,
       "deadline": "2024-07-01",
-      "status": "Canceled"
+      "status": "Cancelled"
     },
     {
       "id": 3,
