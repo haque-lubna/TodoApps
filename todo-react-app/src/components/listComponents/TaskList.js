@@ -18,10 +18,21 @@ const populateTask = (status, category, subcategory, title, description, priorit
 
 export const TaskList = ({data}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [formData, setFormData] = useState({
+    category: "",
+    subCategory: "",
+    title: "",
+    description: "",
+    priority: 23,
+    deadline: "",
+    status: "",
+  });
+
   return (
     <React.Fragment>
       {isModalOpen && (<Modal closeModal={() => setIsModalOpen(false)}>
-        <FilteringForm/>
+        <FilteringForm formData={formData} setFormData={setFormData}/>
       </Modal>)}
       <div className='mt-5 border-top pt-3'>
         <div className='d-flex justify-content-start gap-2 mb-2'>
